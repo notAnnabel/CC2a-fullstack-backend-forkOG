@@ -27,7 +27,7 @@ app.get('/counter', (req, res) => {
 })
 
 app.post('/counter', (req, res) => {
- console.log(req.body)
+ counter = req.body.counter;
  res.send({message: "this respond hasn't been implemented yet ;;"})
 })
 
