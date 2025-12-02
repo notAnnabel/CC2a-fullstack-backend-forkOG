@@ -30,7 +30,7 @@ app.get('/pollution', (req, res) => {
 
 
 app.post('/pollute', (req, res) => {
-pollutionState = true;
+pollutionState = true; //usually true
  res.send({pollutionState : pollutionState})
 })
 
