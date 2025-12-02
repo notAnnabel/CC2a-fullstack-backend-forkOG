@@ -39,8 +39,21 @@ pollutionState = false;
  res.send({pollutionState: pollutionState}) // set the pollution based on if its clean or not
 })
 
+app.use(express.static('assets'))
+
 
 // start server
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+//app.use(express.static('public')){'public/assets/fish-png-1-dead.png' 
+//'public/assets/fish-png-1.png'
+//'public/assets/seagull-png-1-dead.png'
+//'public/assets/shark-png-1-dead.png' 
+//'public/assets/seagull-png-1.png' 
+//'public/assets/shark-png-1.webp'}
+
+//const path = require('path')
+//app.use('/static', express.static(path.join(__dirname, 'public')));
+// https://expressjs.com/en/starter/static-files.html
