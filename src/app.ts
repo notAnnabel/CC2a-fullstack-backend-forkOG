@@ -39,7 +39,7 @@ pollutionState = false;
  res.send({pollutionState: pollutionState}) // set the pollution based on if its clean or not
 })
 
-app.use(express.static('assets'))
+app.use(express.static('public'))
 
 
 // start server
